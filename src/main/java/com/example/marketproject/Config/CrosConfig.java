@@ -12,6 +12,7 @@ public class CrosConfig {
     @Bean
 
     public WebMvcConfigurer corsConfigurer() {
+        
 
         return new WebMvcConfigurer() {
 
