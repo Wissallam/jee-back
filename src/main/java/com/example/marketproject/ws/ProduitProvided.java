@@ -34,5 +34,13 @@ public class ProduitProvided {
         return productService.save(product);
     }
 
+    @DeleteMapping("/codeProduct/{codeProduct}")
+    public int deleteByCodeProduct(@PathVariable String codeProduct) {
+        return productService.deleteByCodeProduct(codeProduct);
+    }
 
+    @PutMapping("/")
+    public int update(Product product) {
+        return productService.update(product);
+    }
 }
