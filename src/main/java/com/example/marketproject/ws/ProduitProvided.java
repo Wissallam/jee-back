@@ -40,7 +40,7 @@ public class ProduitProvided {
     }
 
     @PutMapping("/")
-    public int update(Product product) {
+    public int update(@RequestBody Product product) {
         return productService.update(product);
     }
 }
