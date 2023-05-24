@@ -53,14 +53,15 @@ public class ProductServiceTest {
 
     @Test
     public void testFindAll() {
+        //given
         List<Product> productList = new ArrayList<>();
         productList.add(new Product());
         productList.add(new Product());
-
+       //when
         when(productDao.findAll()).thenReturn(productList);
 
         List<Product> result = productService.findAll();
-
+       //then
         assertEquals(productList, result);
         verify(productDao, times(1)).findAll();
     }
