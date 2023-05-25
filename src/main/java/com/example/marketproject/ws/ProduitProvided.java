@@ -30,7 +30,7 @@ public class ProduitProvided {
     }
 
     @PostMapping("/")
-    public int save(@RequestBody Product product) {
+    public Product save(@RequestBody Product product) {
         return productService.save(product);
     }
 

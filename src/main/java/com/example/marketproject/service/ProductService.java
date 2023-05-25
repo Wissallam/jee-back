@@ -26,13 +26,12 @@ public class ProductService {
         return productDao.findByCodeProduct(codeProduct);
     }
 
-    public int save (Product product){
-        if(findByCodeProduct(product.getCodeProduct())!=null)
-            return -1;
-        else{
-            productDao.save(product);
-            return 1;
-        }
+    public Product save (Product product){
+        Product resulta =null;
+        if(findByCodeProduct(product.getCodeProduct())==null)
+           productDao.save(product);
+        return resulta;
+
     }
 
     @Transactional

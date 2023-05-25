@@ -1,10 +1,7 @@
 package com.example.marketproject.ws;
 
 import com.example.marketproject.bean.MarketOwner;
-import com.example.marketproject.bean.Product;
-import com.example.marketproject.dao.MarketOwnerDao;
 import com.example.marketproject.service.MarketOwnerService;
-import com.example.marketproject.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,6 +10,8 @@ import java.util.List;
 @RestController
 @RequestMapping("market-project/marketOwner")
 public class MarketOwnerProvided {
+    @Autowired
+    private MarketOwnerService marketOwnerService;
 
     @GetMapping("/namemarketowner/{name}")
     public MarketOwner findByName(@PathVariable String name) {
@@ -48,9 +47,5 @@ public class MarketOwnerProvided {
     public int update(@RequestBody MarketOwner marketOwner) {
         return marketOwnerService.update(marketOwner);
     }
-
-    @Autowired
-    private MarketOwnerService marketOwnerService;
-
 
 }
