@@ -15,5 +15,8 @@ class MarketOwnerServiceTest {
 
     @Test
     void save() {
+        //given
+        //when
+        // then
     }
 }
