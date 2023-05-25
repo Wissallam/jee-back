@@ -8,6 +8,9 @@ class MarketOwnerServiceTest {
 
     @Test
     void findByCodeMarket() {
+        //given
+        //when
+        // then
     }
 
     @Test
