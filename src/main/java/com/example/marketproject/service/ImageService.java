@@ -29,7 +29,7 @@ public class ImageService {
         System.out.println("Original Image Byte Size - " + file.getBytes().length);
         ImageModel img = new ImageModel(file.getOriginalFilename(), file.getContentType(),
                 compressBytes(file.getBytes()));
-       // imageDao.save(img);
+        // imageDao.save(img);
         return ResponseEntity.status(HttpStatus.OK);
     }
 
