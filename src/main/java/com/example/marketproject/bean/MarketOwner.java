@@ -16,14 +16,14 @@ public class MarketOwner {
     private String city;
     private String email;
     private String phone_number;
-    private String CodeMarket;
+    private String codeMarket;
 
     public String getCodeMarket() {
-        return CodeMarket;
+        return this.codeMarket;
     }
 
     public void setCodeMarket(String codeMarket) {
-        CodeMarket = codeMarket;
+        this.codeMarket = codeMarket;
     }
 
     public Long getId() {

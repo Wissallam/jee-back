@@ -3,6 +3,7 @@ package com.example.marketproject.dao;
 import com.example.marketproject.bean.MarketOwner;
 import com.example.marketproject.bean.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
