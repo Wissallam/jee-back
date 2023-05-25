@@ -1,9 +1,10 @@
 language: java
-jdk: oraclejdk8
+jdk: openjdk8
 # Specify the branches to build
 branches:
   only:
     - master
+    - test
 # Define the build stages
 stages:
   - build
@@ -12,7 +13,7 @@ stages:
 jobs:
   include:
     - stage: build
-      script: mvn clean compile
+      script: mvn clean package -DskipTests=true
 
 # Configure the test stage
     - stage: test
