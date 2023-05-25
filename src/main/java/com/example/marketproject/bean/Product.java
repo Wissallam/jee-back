@@ -22,6 +22,9 @@ public class Product {
     @ManyToOne
     private Category category;
 
+    @OneToOne
+    private ImageModel imagePoduct;
+
     public String getCodeProduct() {
         return codeProduct;
     }
