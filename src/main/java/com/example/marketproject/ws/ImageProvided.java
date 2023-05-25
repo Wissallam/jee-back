@@ -26,6 +26,7 @@ public class ImageProvided {
     @GetMapping(path = { "/get/{imageName}" })
     public ImageModel getImage( @PathVariable("imageName") String imageName) throws IOException {
         return imageService.getImage(imageName);
+
     }
 
 
