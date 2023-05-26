@@ -13,4 +13,8 @@ class ProductDaoTest {
     @Test
     void deleteByCodeProduct() {
     }
+
+    @Test
+    void findByLabelProduct() {
+    }
 }
