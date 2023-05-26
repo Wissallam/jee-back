@@ -19,9 +19,17 @@ public class ProduitProvided {
         return productService.findByLabel(label);
     }
 
+
+
     @GetMapping("/")
     public List<Product> findAll() {
         return productService.findAll();
+    }
+
+
+    @GetMapping("/marketOwnerCode/{marketOwnerCode}")
+    public List<Product> findByMarketOwnerCodeMarket(@PathVariable String marketOwnerCode) {
+        return productService.findByMarketOwnerCodeMarket(marketOwnerCode);
     }
 
     @GetMapping("/codeProduct/{codeProduct}")

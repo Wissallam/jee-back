@@ -9,6 +9,8 @@ public interface ProductDao extends JpaRepository<Product,Long> {
     Product findByLabel(String label);
     Product findByCodeProduct(String codeProduct);
     List<Product> findByMarketOwner(MarketOwner marketOwner);
+    List<Product> findByMarketOwnerCodeMarket(String marketOwnerCode);
+
     //List<Product> findByNomAndPrenom(String nom, String prenon);
 
     //int deleteById( String cne);

@@ -22,6 +22,11 @@ public class ProductService {
         return productDao.findAll();
     }
 
+
+    public List<Product> findByMarketOwnerCodeMarket(String marketOwnerCode) {
+        return productDao.findByMarketOwnerCodeMarket(marketOwnerCode);
+    }
+
     public Product findByCodeProduct(String codeProduct) {
         return productDao.findByCodeProduct(codeProduct);
     }
