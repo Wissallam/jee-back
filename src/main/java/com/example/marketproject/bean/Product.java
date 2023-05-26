@@ -16,6 +16,10 @@ public class Product {
     private float htPrice;
     private float tva;
 
+    public Product(String label) {
+        this.label = label;
+    }
+
     @ManyToOne
     private MarketOwner marketOwner;
 
