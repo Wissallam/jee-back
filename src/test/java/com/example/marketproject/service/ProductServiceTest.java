@@ -67,4 +67,7 @@ public class ProductServiceTest {
     }
 
 // build trigger test
+    // 2-build trigger test
+    //3-build trigger test
+
 }
